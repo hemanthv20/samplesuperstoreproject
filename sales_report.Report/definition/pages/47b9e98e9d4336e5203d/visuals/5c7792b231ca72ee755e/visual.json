@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "7502a92ca3307d0d6d20",
+  "name": "5c7792b231ca72ee755e",
   "position": {
-    "x": 9.6385542168674689,
-    "y": 0,
-    "z": 0,
-    "height": 524.33734939759029,
-    "width": 1648.1927710843372,
-    "tabOrder": 0
+    "x": 10,
+    "y": 534,
+    "z": 1,
+    "height": 524,
+    "width": 1648,
+    "tabOrder": 1
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "columnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -23,11 +23,11 @@
                       "Entity": "Orders"
                     }
                   },
-                  "Property": "Category"
+                  "Property": "Ship Mode"
                 }
               },
-              "queryRef": "Orders.Category",
-              "nativeQueryRef": "Category",
+              "queryRef": "Orders.Ship Mode",
+              "nativeQueryRef": "Ship Mode",
               "active": true
             }
           ]
@@ -42,11 +42,11 @@
                       "Entity": "Orders"
                     }
                   },
-                  "Property": "Total Profit"
+                  "Property": "Total Orders"
                 }
               },
-              "queryRef": "Orders.Total Profit",
-              "nativeQueryRef": "Total Profit"
+              "queryRef": "Orders.Total Orders",
+              "nativeQueryRef": "Total Orders"
             }
           ]
         }
@@ -61,7 +61,7 @@
                     "Entity": "Orders"
                   }
                 },
-                "Property": "Total Profit"
+                "Property": "Total Orders"
               }
             },
             "direction": "Descending"
@@ -75,7 +75,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "8728f1c5ec3601a99001",
+        "name": "d5a7f24028e99c84474a",
         "field": {
           "Measure": {
             "Expression": {
@@ -83,13 +83,13 @@
                 "Entity": "Orders"
               }
             },
-            "Property": "Total Profit"
+            "Property": "Total Orders"
           }
         },
         "type": "Advanced"
       },
       {
-        "name": "73d4206392ce4d1d057e",
+        "name": "3cc9583905049e2c4b15",
         "field": {
           "Column": {
             "Expression": {
@@ -97,7 +97,7 @@
                 "Entity": "Orders"
               }
             },
-            "Property": "Category"
+            "Property": "Ship Mode"
           }
         },
         "type": "Categorical"
